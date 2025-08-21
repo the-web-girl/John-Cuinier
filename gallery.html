@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Culinaire - Chef Alexandre | Photos de Plats Gastronomiques</title>
+    <meta name="description" content="Découvrez la galerie culinaire du Chef Alexandre : photos de plats gastronomiques, créations artistiques, dressages sophistiqués. L'art de la haute cuisine en images.">
+    <meta name="keywords" content="galerie culinaire, photos plats gastronomiques, dressage chef, art culinaire, création chef Alexandre">
+    
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="canonical" href="https://the-web-girl.github.io/John-Cuinier/gallery.html">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <svg class="chef-hat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C8.686 2 6 4.686 6 8c0 1.5 0.5 3 1.5 4L6 22h12l-1.5-10c1-1 1.5-2.5 1.5-4 0-3.314-2.686-6-6-6z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">Chef Alexandre</span>
+                        <span class="logo-sub">Cuisine Privée</span>
+                    </div>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="menus.html" class="nav-link">Menus & Formules</a>
+                    <a href="gallery.html" class="nav-link active" aria-current="page">Galerie</a>
+                    <a href="textures.html" class="nav-link">Guide des textures</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu de navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobile-menu">
+                <a href="index.html" class="nav-mobile-link">Accueil</a>
+                <a href="about.html" class="nav-mobile-link">À propos</a>
+                <a href="menus.html" class="nav-mobile-link">Menus & Formules</a>
+                <a href="gallery.html" class="nav-mobile-link active" aria-current="page">Galerie</a>
+                <a href="textures.html" class="nav-mobile-link">Guide des textures</a>
+                <a href="contact.html" class="nav-mobile-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="page-content">
+        <!-- Hero Section -->
+        <section class="page-hero warm-bg">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="page-title">Galerie Culinaire</h1>
+                    <p class="page-description">
+                        Découvrez l'univers visuel de notre cuisine d'exception. 
+                        Chaque plat raconte une histoire, chaque création est une œuvre d'art éphémère.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-index="0" tabindex="0" role="button" aria-label="Voir l'image en grand : Création Gastronomique">
+                        <img src="images/dish-1.jpg" alt="Plat gastronomique élégamment dressé sur assiette blanche" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Création Gastronomique</h3>
+                            <p class="gallery-description">Un plat signature alliant techniques modernes et saveurs traditionnelles</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="1" tabindex="0" role="button" aria-label="Voir l'image en grand : Spécialité de Poisson">
+                        <img src="images/dish-2.jpg" alt="Plat de poisson sophistiqué avec sauce dorée" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Spécialité de Poisson</h3>
+                            <p class="gallery-description">Poisson de ligne accompagné de sa sauce signature aux agrumes</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="2" tabindex="0" role="button" aria-label="Voir l'image en grand : L'Art Culinaire">
+                        <img src="images/chef-hero.jpg" alt="Chef Alexandre en action dans sa cuisine" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">L'Art Culinaire</h3>
+                            <p class="gallery-description">La passion et la précision au cœur de chaque création</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="3" tabindex="0" role="button" aria-label="Voir l'image en grand : Dessert d'Exception">
+                        <img src="images/dessert-1.jpg" alt="Présentation artistique d'un dessert" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Dessert d'Exception</h3>
+                            <p class="gallery-description">Création sucrée alliant textures et saveurs inattendues</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="4" tabindex="0" role="button" aria-label="Voir l'image en grand : Art de la Table">
+                        <img src="images/dish-2.jpg" alt="Mise en scène culinaire raffinée" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Art de la Table</h3>
+                            <p class="gallery-description">Chaque plat est une œuvre d'art visuelle et gustative</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="5" tabindex="0" role="button" aria-label="Voir l'image en grand : Précision Culinaire">
+                        <img src="images/chef-hero.jpg" alt="Préparation minutieuse d'un plat" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <path d="M11 8v6"/>
+                                <path d="M8 11h6"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Précision Culinaire</h3>
+                            <p class="gallery-description">L'excellence se trouve dans les détails de chaque geste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer la vue agrandie">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            
+            <img class="modal-image" id="modal-image" src="" alt="">
+            
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+
+            <button class="modal-nav modal-prev" aria-label="Image précédente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6"/>
+                </svg>
+            </button>
+            <button class="modal-nav modal-next" aria-label="Image suivante">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

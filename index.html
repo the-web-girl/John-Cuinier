@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chef Alexandre - Cuisine Privée d'Exception | Chef à Domicile Paris</title>
+    <meta name="description" content="Chef Alexandre propose une cuisine privée d'exception à domicile. Menus gastronomiques personnalisés, service professionnel en Île-de-France. Réservez votre expérience culinaire unique.">
+    <meta name="keywords" content="chef privé, cuisine à domicile, chef cuisinier, gastronomie, menu personnalisé, Paris, Île-de-France">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chef Alexandre - Cuisine Privée d'Exception">
+    <meta property="og:description" content="Une expérience culinaire unique à domicile avec le Chef Alexandre. Menus gastronomiques sur mesure en Île-de-France.">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="canonical" href="https://the-web-girl.github.io/John-Cuinier/">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <svg class="chef-hat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C8.686 2 6 4.686 6 8c0 1.5 0.5 3 1.5 4L6 22h12l-1.5-10c1-1 1.5-2.5 1.5-4 0-3.314-2.686-6-6-6z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">Chef Alexandre</span>
+                        <span class="logo-sub">Cuisine Privée</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+                    <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="menus.html" class="nav-link">Menus & Formules</a>
+                    <a href="gallery.html" class="nav-link">Galerie</a>
+                    <a href="textures.html" class="nav-link">Guide des textures</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu de navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobile-menu" role="navigation" aria-label="Navigation mobile">
+                <a href="index.html" class="nav-mobile-link active" aria-current="page">Accueil</a>
+                <a href="about.html" class="nav-mobile-link">À propos</a>
+                <a href="menus.html" class="nav-mobile-link">Menus & Formules</a>
+                <a href="gallery.html" class="nav-mobile-link">Galerie</a>
+                <a href="textures.html" class="nav-mobile-link">Guide des textures</a>
+                <a href="contact.html" class="nav-mobile-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="images/chef-hero.jpg" alt="Chef Alexandre en cuisine, préparant un plat d'exception" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Chef Alexandre
+                    <span class="hero-subtitle">Cuisine Privée d'Exception</span>
+                </h1>
+                <p class="hero-description">
+                    Une expérience culinaire unique à domicile, 
+                    alliant passion, créativité et excellence gastronomique
+                </p>
+                <div class="hero-buttons">
+                    <a href="menus.html" class="btn btn-gold">Découvrir les Menus</a>
+                    <a href="contact.html" class="btn btn-outline-white">Nous Contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section class="specialties">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Notre Philosophie Culinaire</h2>
+                    <p class="section-description">
+                        Chaque plat raconte une histoire, chaque saveur éveille les sens. 
+                        Découvrez une cuisine d'exception pensée pour vous.
+                    </p>
+                </div>
+
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C8.686 2 6 4.686 6 8c0 1.5 0.5 3 1.5 4L6 22h12l-1.5-10c1-1 1.5-2.5 1.5-4 0-3.314-2.686-6-6-6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="specialty-title">Cuisine Gastronomique</h3>
+                        <p class="specialty-description">Des créations culinaires raffinées alliant tradition et modernité</p>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 12 2 2 4-4"/>
+                                <path d="M21 12c.552 0 1-.448 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3c0 .552.448 1 1 1"/>
+                                <path d="M21 16v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="specialty-title">Excellence & Qualité</h3>
+                        <p class="specialty-description">Sélection rigoureuse des meilleurs produits locaux et de saison</p>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="m19 8 2 2-2 2"/>
+                                <path d="m17 8-2 2 2 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="specialty-title">Service Personnalisé</h3>
+                        <p class="specialty-description">Une expérience culinaire sur mesure adaptée à vos goûts</p>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h3 class="specialty-title">Flexibilité</h3>
+                        <p class="specialty-description">Service à domicile ou en location selon vos besoins</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Prêt pour une Expérience Culinaire Unique ?</h2>
+                    <p class="cta-description">
+                        Réservez dès maintenant votre menu personnalisé et 
+                        laissez-vous transporter par une cuisine d'exception
+                    </p>
+                    <a href="contact.html" class="btn btn-accent">Réserver Maintenant</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
