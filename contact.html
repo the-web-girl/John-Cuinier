@@ -1,11 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact & Réservation - Chef Alexandre | Réservez Votre Menu Privé</title>
+    <meta name="description" content="Contactez Chef Alexandre pour réserver votre expérience culinaire privée. Formulaire de contact, tarifs, zone d'intervention Paris Île-de-France. Réponse rapide garantie.">
+    <meta name="keywords" content="contact chef Alexandre, réservation chef privé, tarif cuisine domicile, chef Paris, réserver menu gastronomique">
+    
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="canonical" href="https://the-web-girl.github.io/John-Cuinier/contact.html">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <svg class="chef-hat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C8.686 2 6 4.686 6 8c0 1.5 0.5 3 1.5 4L6 22h12l-1.5-10c1-1 1.5-2.5 1.5-4 0-3.314-2.686-6-6-6z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">Chef Alexandre</span>
+                        <span class="logo-sub">Cuisine Privée</span>
+                    </div>
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="menus.html" class="nav-link">Menus & Formules</a>
+                    <a href="gallery.html" class="nav-link">Galerie</a>
+                    <a href="textures.html" class="nav-link">Guide des textures</a>
+                    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+                </nav>
+
+                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu de navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobile-menu">
+                <a href="index.html" class="nav-mobile-link">Accueil</a>
+                <a href="about.html" class="nav-mobile-link">À propos</a>
+                <a href="menus.html" class="nav-mobile-link">Menus & Formules</a>
+                <a href="gallery.html" class="nav-mobile-link">Galerie</a>
+                <a href="textures.html" class="nav-mobile-link">Guide des textures</a>
+                <a href="contact.html" class="nav-mobile-link active" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="page-content">
+        <!-- Hero Section -->
+        <section class="page-hero warm-bg">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="page-title">Contactez-nous</h1>
+                    <p class="page-description">
+                        Prêt à vivre une expérience culinaire d'exception ? 
+                        Contactez-nous pour organiser votre événement sur mesure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <h2 class="form-title">Demande de Réservation</h2>
+                            <p class="form-description">
+                                Remplissez ce formulaire et nous vous recontacterons rapidement pour finaliser votre demande.
+                            </p>
+                        </div>
+                        
+                        <form class="contact-form" id="contact-form" action="https://formsubmit.co/chef.alexandre@cuisine-privee.fr" method="POST">
+                            <!-- Hidden fields for formsubmit -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://the-web-girl.github.io/John-Cuinier/contact.html?sent=true">
+                            <input type="hidden" name="_subject" value="Nouvelle demande de réservation - Chef Alexandre">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">Prénom *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required 
+                                           placeholder="Votre prénom" aria-describedby="firstName-help">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Nom *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required 
+                                           placeholder="Votre nom de famille" aria-describedby="lastName-help">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required 
+                                       placeholder="votre.email@exemple.com" aria-describedby="email-help">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" 
+                                       placeholder="+33 6 12 34 56 78" aria-describedby="phone-help">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eventDate" class="form-label">Date souhaitée</label>
+                                    <input type="date" id="eventDate" name="eventDate" class="form-input" 
+                                           aria-describedby="eventDate-help">
+                                </div>
+                                <div class="form-group">
+                                    <label for="guests" class="form-label">Nombre de convives</label>
+                                    <select id="guests" name="guests" class="form-select">
+                                        <option value="">Sélectionner</option>
+                                        <option value="2-4">2-4 personnes</option>
+                                        <option value="5-8">5-8 personnes</option>
+                                        <option value="9-12">9-12 personnes</option>
+                                        <option value="13+">13+ personnes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="menuType" class="form-label">Type de menu souhaité</label>
+                                <select id="menuType" name="menuType" class="form-select">
+                                    <option value="">Choisir un menu</option>
+                                    <option value="dejeuner">Menu Déjeuner (45€)</option>
+                                    <option value="gastronomique">Menu Gastronomique (85€)</option>
+                                    <option value="evenementiel">Menu Événementiel (sur devis)</option>
+                                    <option value="personnalise">Menu Personnalisé</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" required
+                                         placeholder="Décrivez votre événement, vos préférences culinaires, allergies éventuelles..." 
+                                         aria-describedby="message-help"></textarea>
+                                <p id="message-help" class="form-help">
+                                    N'hésitez pas à préciser vos attentes, contraintes alimentaires, et toute information utile.
+                                </p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                </svg>
+                                Envoyer la demande
+                            </button>
+
+                            <p class="form-note">
+                                * Champs obligatoires. Vos données sont traitées de manière confidentielle.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="info-header">
+                                <h2 class="info-title">Informations de Contact</h2>
+                            </div>
+                            <div class="info-content">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-label">Téléphone</h3>
+                                        <p class="info-value">+33 6 12 34 56 78</p>
+                                        <p class="info-description">Lun-Sam 9h-19h</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-label">Email</h3>
+                                        <p class="info-value">chef.alexandre@cuisine-privee.fr</p>
+                                        <p class="info-description">Réponse sous 24h</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-label">Zone d'intervention</h3>
+                                        <p class="info-value">Paris et Île-de-France</p>
+                                        <p class="info-description">Déplacements possibles</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12,6 12,12 16,14"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-label">Disponibilités</h3>
+                                        <p class="info-value">Sur réservation</p>
+                                        <p class="info-description">Minimum 48h à l'avance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="map-card">
+                            <div class="map-header">
+                                <h3 class="map-title">Zone d'Intervention</h3>
+                            </div>
+                            <div class="map-content">
+                                <div class="map-placeholder">
+                                    <div class="map-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <p class="map-text">Paris et Île-de-France</p>
+                                    <p class="map-note">Carte interactive disponible prochainement</p>
+                                </div>
+                                <div class="map-info">
+                                    <p><strong>Zone principale :</strong> Paris (tous arrondissements)</p>
+                                    <p><strong>Déplacements possibles :</strong> Hauts-de-Seine, Seine-Saint-Denis, 
+                                       Val-de-Marne (supplément selon distance)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal success-modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4"/>
+                    <circle cx="12" cy="12" r="10"/>
+                </svg>
+            </div>
+            <h3 id="success-title" class="success-title">Message envoyé !</h3>
+            <p class="success-message">Nous vous répondrons dans les plus brefs délais.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
